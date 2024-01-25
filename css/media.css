@@ -4,7 +4,7 @@
     font-size: 0.875rem;
   }
   .section {
-    padding: 5rem 0;
+    padding: 4rem 0;
   }
 
   .header {
@@ -68,6 +68,22 @@
   #main-section .landing-text-box p {
     width: 50%;
   }
+
+  /* Slider Section Style */
+  .slider-section .swiper-slide > div.slider-text h4 {
+    font-size: 1.25rem;
+  }
+  .slider-section .slider-nav {
+    width: 45px;
+    height: 45px;
+  }
+  .slider-section .swiper-button-next:after,
+  .slider-section .swiper-button-prev:after {
+    font-size: 1rem;
+  }
+  .slider-section .slider-nav {
+    margin: 0 30px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -100,6 +116,23 @@
   }
   .meet-section .meet-left-image {
     row-gap: 0.625rem;
+  }
+  /* Slider Section Style */
+  .slider-section .slider-nav {
+    display: none;
+  }
+  .slider-section .swiper-slide {
+    flex-direction: column;
+    row-gap: 2.5rem;
+  }
+  .slider-section .swiper-slide > div {
+    width: 80%;
+    margin: auto;
+  }
+
+  .slider-section .slider-text {
+    align-items: center;
+    text-align: center;
   }
 
   /* Footer Style */
@@ -140,5 +173,10 @@
   }
   #main-section .landing-text-box h1 {
     font-size: 1.5rem;
+  }
+
+  /* Slider Section Style */
+  .slider-section .swiper-slide > div.slider-image {
+    width: 95%;
   }
 }
